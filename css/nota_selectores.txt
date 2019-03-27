@@ -1,0 +1,27 @@
+CSS Cheat Sheet
+
+Reference:
+*https://www.w3schools.com/cssref/css_selectors.asp
+*https://css-tricks.com/almanac/
+
+Las hojas de estilo en cascada en el nivel más básico indican que el orden de las reglas CSS cuan es importante.
+
+
+.class
+#id
+*
+element
+element, element
+element element
+element > element
+element + element
+:hover
+:last-child
+:first-child
+!important (not recommended)
+
+
+Lo que los selectores ganan en la cascada depende de:
+- Especificidad
+- Importancia
+- Orden de fuente
