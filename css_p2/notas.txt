@@ -1,0 +1,7 @@
+Enlaces utiles:
+
+https://www.cleancss.com/css-minify/
+
+Jugar con el flexbox: 
+
+http://flexboxfroggy.com/#es

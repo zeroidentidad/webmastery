@@ -1,0 +1,36 @@
+body{
+	margin: 0px;
+}
+
+.contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 3em;
+	border-bottom: 3px solid pink;
+	border-right: 3px solid pink;
+	border-left: 3px solid pink;
+	width: 100%;
+	text-align: center;
+	/*-moz-box-shadow: 4px 4px 5px #888888; // firefox
+	-ms-box-shadow: 4px 4px 5px #888888; // ie explorer
+	-webkit-box-shadow: 4px 4px 5px #888888; // chrome, safari
+	-o-box-shadow: 4px 4px 5px #888888; // opera */
+	box-shadow: 4px 4px 5px #888888;
+	margin-top: 5px;
+}
+
+img {
+	width: 450px;
+	height: 300px;
+	margin: 10px;
+	transition: all 2.2s;
+}
+
+img:hover{
+	transform: scale(1.3);
+}
