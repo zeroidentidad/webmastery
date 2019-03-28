@@ -1,0 +1,141 @@
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.robots {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+
+.cabeza, 
+.left_brazo, 
+.torso, 
+.right_brazo, 
+.left_pierna, 
+.right_pierna {
+	 background-color: #66ff33;
+}
+
+.cabeza { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+} 
+
+.ojos {
+	display: flex
+}
+
+.cabeza:hover {
+	width: 250px;
+    transition: 1s ease-in-out;
+}
+
+.cuerpo_arriba { 
+	width: 300px; 
+	height: 150px;
+	display: flex; 
+} 
+
+.left_brazo, .right_brazo { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+
+.left_brazo { 
+	margin-right: 10px; 
+} 
+
+.left_brazo:not(:hover) {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+    animation: pulse 5s infinite alternate;
+}
+
+.right_brazo { 
+	margin-left: 10px; 
+} 
+
+.right_brazo:not(:hover) {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+} 
+
+.cuerpo_bajo { 
+	width: 200px; 
+	height: 200px;
+	/* Esta es otra propiedad útil. */
+	margin: 0 auto;
+	display: flex; 
+} 
+
+.left_pierna, .right_pierna { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+} 
+
+.left_pierna { 
+	margin-left: 45px; 
+} 
+
+.left_pierna:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_pierna { 
+	margin-left: 30px; 
+}
+
+.right_pierna:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.left_ojo, .right_ojo { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;  
+} 
+
+.left_ojo { 
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_ojo { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
+
+
+
+
+
