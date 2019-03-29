@@ -1,0 +1,15 @@
+frameworks populares o mas usados de UIs:
+
+https://getbootstrap.com/
+
+https://foundation.zurb.com/
+
+plantillas de paginas:
+
+http://www.mashup-template.com/templates.html
+
+https://www.creative-tim.com/bootstrap-themes/
+
+https://startbootstrap.com/themes/
+
+-> https://daneden.github.io/animate.css/
