@@ -1,0 +1,29 @@
+DOM Selectores
+--------------
+getElementsByTagName
+getElementsByClassName
+getElementById
+
+querySelector
+querySelectorAll
+
+getAttribute
+setAttribute
+
+##Cambiando Estilo por JS
+style.{property} //ok
+
+className //best
+classList //best
+
+classList.add
+classList.remove
+classList.toggle
+
+##Extra
+innerHTML //Usar con cuidado
+
+parentElement
+children
+
+##Es importante para los selectores la CACHE en variables.
