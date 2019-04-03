@@ -3,7 +3,15 @@ var database = [
 	{
 		username: "zero",
 		password: "secret"
-	}
+	},
+	{
+		username: "otro",
+		password: "secret"
+	},
+	{
+		username: "nose",
+		password: "secret"
+	}		
 ];
 
 // 3. Cree una matriz llamada "newsfeed" que contiene 3 objetos con propiedades "username" y "timeline".
@@ -25,8 +33,20 @@ var newsfeed = [
 var userNameIn = prompt("Cual es usuario:"); 
 var passwordIn = prompt("Cual es tu contraseña:"); 
 
+
+function usuarioValido(user, pass){
+
+	for(var i=0; i < database.length; i++){
+		if(user === database[i].username && pass === database[i].password){
+			return true;
+		} 
+	}
+	return false;
+}
+
 function singIn(user, pass){
-	if(user === database[0].username && pass === database[0].password){
+
+	if(usuarioValido(user, pass) == true){
 		console.log(newsfeed);
 	} else {
 		alert("usuario o password incorrecto");
