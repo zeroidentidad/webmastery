@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CardLista from './CardLista';
 import SearchBox from './SearchBox';
+import Scroll from './Scroll';
 //import { robots } from './robots.js';
 import './App.css';
 
@@ -38,7 +39,9 @@ class App extends Component {
 				<div className='tc'>
 				<h1 className='f1'>Amigos Robot</h1>
 				<SearchBox searchChange={this.onSearchChange}/>
+				<Scroll>
 				<CardLista robots={filtradoRobots}/>
+				</Scroll>
 				</div>
 				);
 		}
