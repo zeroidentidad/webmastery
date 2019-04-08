@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './contenedores/App';
 //import CardLista from './CardLista';
 import * as serviceWorker from './serviceWorker';
 import 'tachyons';
