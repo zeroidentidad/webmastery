@@ -13,7 +13,10 @@
     "nodemon": "^1.18.11"
   },
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
-    "express": "^4.16.4"
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "knex": "^0.16.3"
   }
 }
