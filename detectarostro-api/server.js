@@ -27,10 +27,10 @@ const database = {
 const db = knex({
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
-    user : 'aneagoie',
-    password : '',
-    database : 'smart-brain'
+    host : '172.30.213.218', //vpn
+    user : 'detectarostro',
+    password : 'xD',
+    database : 'detectarostro'
   }
 });
 
