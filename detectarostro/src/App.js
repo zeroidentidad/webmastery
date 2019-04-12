@@ -26,24 +26,26 @@ const opcionesParticulas = {
   }
 }
 
+const estadoInicial = {
+  input:'',
+  imageUrl:'',
+  box: {},
+  route: 'signin',
+  isSignedIn: false,
+  user: {
+    id: '',
+    name: '',
+    email: '',
+    entries: 0,
+    joined: ''
+  }
+}
+
 class App extends Component {
 
   constructor(){
     super();
-    this.state= {
-      input:'',
-      imageUrl:'',
-      box: {},
-      route: 'signin',
-      isSignedIn: false,
-      user: {
-        id: '',
-        name: '',
-        email: '',
-        entries: 0,
-        joined: ''
-      }
-    }
+    this.state=estadoInicial
   }
 
   loadUser = (data) => {
@@ -102,7 +104,7 @@ class App extends Component {
 
   onRouteChange = (route) =>{
     if(route === 'signout'){
-      this.setState({isSignedIn:false})
+      this.setState({estadoInicial})
     } else if (route === 'home'){
       this.setState({isSignedIn:true})
     }
