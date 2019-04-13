@@ -45,7 +45,7 @@ class App extends Component {
 
   constructor(){
     super();
-    this.state=estadoInicial
+    this.state=estadoInicial;
   }
 
   loadUser = (data) => {
@@ -82,7 +82,7 @@ class App extends Component {
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
     //app.models.predict( Clarifai.FACE_DETECT_MODEL, this.state.input)
-    fetch('http://localhost:3000/imageurl', {
+    fetch('https://detectarostro-api.herokuapp.com/imageurl', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -92,7 +92,7 @@ class App extends Component {
     .then(response => response.json())
     .then(response => {
         if (response) {
-          fetch('http://localhost:3000/image', {
+          fetch('https://detectarostro-api.herokuapp.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

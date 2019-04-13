@@ -13,15 +13,13 @@ const app = express();
 
 app.use(bodyParser.json());
 
-const port = 3000;
+//const port = 3000; //const PORT = process.env.PORT;
 
 const db = knex({
 	client: 'pg',
 	connection: {
-    host : '172.30.213.218', //vpn
-    user : 'detectarostro',
-    password : 'xD',
-    database : 'detectarostro'
+    connectionString : process.env.DATABASE_URL,
+    ssl: true
 	}
 });
 
@@ -41,4 +39,5 @@ app.put('/image', (req, res) => {image.handleImage (req, res, db) })
 
 app.post('/imageurl', (req, res) => {image.handleAPICall (req, res) })
 
-app.listen(port, ()=>{ console.log(`app en puerto ${port}`); });
+//app.listen(port, ()=>{ console.log(`app en puerto ${port}`); });
+app.listen(process.env.PORT||3000, ()=>{ console.log(`app en puerto ${process.env.PORT}`); });
